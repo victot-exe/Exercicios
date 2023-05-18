@@ -3,14 +3,14 @@ package oo.heranca.desafio;
 public class Ferrari extends Carro{
 	
 	
-	Ferrari(){
+	public Ferrari(){
 		this(350);
 	}
-	Ferrari(int velocidadeMax){
+	public Ferrari(int velocidadeMax){
 		super(velocidadeMax);
 	}
 	
-	boolean acelerar() {
+	public boolean acelerar() {
 		
 		boolean acelerar1 = super.acelerar();
 		boolean acelerar2 = super.acelerar();

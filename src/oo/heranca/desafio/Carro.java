@@ -3,18 +3,18 @@ package oo.heranca.desafio;
 public class Carro {
 	
 	final double VELOCIDADE_MAXIMA;
-	double velocidadeAtual;
-	int delta = 5;
+	public double velocidadeAtual;
+	protected int delta = 5;
 	
 	
-	Carro(int velocidadeMaxima){
+	protected Carro(int velocidadeMaxima){
 		this.VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
-	Carro(){
+	protected Carro(){
 		this(250);
 	}
 	
-	boolean acelerar() {
+	public boolean acelerar() {
 		
 		if(velocidadeAtual + delta > VELOCIDADE_MAXIMA) {
 			this.velocidadeAtual = VELOCIDADE_MAXIMA;
@@ -25,7 +25,7 @@ public class Carro {
 		}
 	}
 	
-	boolean frear() {
+	public boolean frear() {
 		if(0 < this.velocidadeAtual) {
 			this.velocidadeAtual = this.velocidadeAtual - 5;
 			return true;

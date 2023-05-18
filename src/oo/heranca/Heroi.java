@@ -6,11 +6,11 @@ public class Heroi extends Jogador {//extends é para estender a classe
 		//super();//o erro está dando pois jogador não possui um construtor compatível
 	//}
 	
-	Heroi(int x, int y){//outra forma de resolver (pede ao usuário na hora que criar)
+	public Heroi(int x, int y){//outra forma de resolver (pede ao usuário na hora que criar)
 		super(x, y);
 	}
-	
-	boolean atacar(Jogador oponente) {
+	@Override
+	public boolean atacar(Jogador oponente) {
 		boolean ataque1 = super.atacar(oponente);//super é a palavra reservada para herdar os atributos e métodos do "pai"
 		boolean ataque2 = super.atacar(oponente);
 		boolean ataque3 = super.atacar(oponente);

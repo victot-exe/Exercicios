@@ -2,11 +2,11 @@ package oo.heranca;
 
 public class Jogador {
 	
-	int vida = 100;
-	int x;
-	int y;
+	public int vida = 100;
+	public int x;
+	public int y;
 	
-	Jogador(int x, int y){
+	protected Jogador(int x, int y){
 		this.x = x;
 		this.y = y;
 	}
@@ -15,7 +15,7 @@ public class Jogador {
 //		this(0, 0);//mesmo que esse construtor chame o outro construtor
 //	}
 	
-	boolean atacar(Jogador oponente) {
+	public boolean atacar(Jogador oponente) {
 		int deltax = Math.abs(x - oponente.x);//Math.abs reorna o valor absoluto, ignorando o sinal
 		int deltay = Math.abs(y - oponente.y);
 		
@@ -30,7 +30,7 @@ public class Jogador {
 		}
 	}
 	
-	boolean andar(Direcao direcao) {
+	public boolean andar(Direcao direcao) {
 		switch(direcao) {
 		case NORTE:
 			y--;
