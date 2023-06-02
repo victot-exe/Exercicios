@@ -11,4 +11,9 @@ public class Produto extends Object{//toda a classe extende Object de forma impl
 		this.preco = preco;
 		this.desconto = desconto;
 	}
+	
+	public String toString() {//como foi implementado o método toString o print puxa ele
+		double precoFinal = preco * (1 - desconto);
+		return nome + " tem preço de R$ " + precoFinal;
+	}
 }
