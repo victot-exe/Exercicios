@@ -1,4 +1,4 @@
-package src.execao;
+package src.excecao;
 
 public class Basico {
 	
