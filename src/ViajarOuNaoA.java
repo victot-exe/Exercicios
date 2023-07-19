@@ -19,7 +19,7 @@ public class ViajarOuNaoA {
 
 		entrada.close();
 		
-		
+		System.out.println(true && false);
 	}
 
 }
